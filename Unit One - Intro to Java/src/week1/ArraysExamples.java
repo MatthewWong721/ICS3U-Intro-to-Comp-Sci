@@ -3,10 +3,16 @@ package week1;
 public class ArraysExamples {
     public static void main(String[] args){
         exampleOne();
-        exampleTwo();
+        double[] arr = {2.3,1.4,7.6,0.4};
+        exampleTwo(arr);
     }
 
-    private static void exampleTwo(){
+    private static void exampleTwo(double[] arr){
+        double sum=0;
+        for(double x:arr){
+            sum+=x;
+        }
+        System.out.println(sum);
     }
 
     private static void exampleOne(){
