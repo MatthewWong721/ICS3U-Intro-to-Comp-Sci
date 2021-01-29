@@ -37,11 +37,11 @@ public class VariablesHomework {
         System.out.println(y);
     }
     private static void questionFour(int x1, int y1, int x2, int y2){
-        double slope = (y2-y1)/(x2-x1);
+        double slope = (double)(y2-y1)/(x2-x1);
         System.out.println(slope);
     }
     private static void questionFive(int pennies, int nickles, int dimes, int quarters, int loonies, int toonies){
-        double money=(0.01*pennies)+(0.05*nickles)+(0.1*dimes)+(0.25*quarters)+loonies+(2*toonies);
+        double money=(0.01*pennies)+(0.05*nickles)+(0.1*dimes)+(0.25*quarters)+loonies+(2.0*toonies);
         System.out.println(money);
     }
     private static void questionSix(int a, int b, int c){
