@@ -55,11 +55,11 @@ public class ThreeCardPoker {
         continue;
       System.out.println("Player: " + playerHand);
       System.out.println("Dealer: " + dealerHand);
-      anteAndPlay(dealerHand, playerHand);
+      anteAndPlay(playerHand, dealerHand);
       if (pairPlus > 0)
         pairPlus(playerHand);
     }
-    System.out.println("You cannot afford to play again");
+    System.out.println("You cannot afford to play again.");
   }
 
   /**
@@ -292,10 +292,12 @@ public class ThreeCardPoker {
     if (handType(hand1) != handType(hand2)) {
       if (handType(hand1) > handType(hand2))
         return 1;
-      else
+      else{
         return -1;
-    } else
+      }
+    } else{
       return equalHandType(hand1, hand2);
+    }
   }
 
   /**
